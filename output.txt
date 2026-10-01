@@ -1,0 +1,54 @@
+MAX HEAP INSERTION
+==================
+
+After inserting 78: 78
+After inserting 92: 92 78
+After inserting 65: 92 78 65
+After inserting 88: 92 88 65 78
+After inserting 95: 95 92 65 78 88
+After inserting 72: 95 92 72 78 88 65
+After inserting 84: 95 92 84 78 88 65 72
+After inserting 90: 95 92 90 78 88 65 72 84
+
+Final Max Heap: 95 92 90 78 88 65 72 84
+Highest Score: 95
+Total parent comparisons during insertion: 10
+
+
+LINEAR SEARCH
+=============
+
+Scores: 78 92 65 88 95 72 84 90
+
+Comparison 1: 78 vs 92 -> new maximum = 92
+Comparison 2: 92 vs 65
+Comparison 3: 92 vs 88
+Comparison 4: 92 vs 95 -> new maximum = 95
+Comparison 5: 95 vs 72
+Comparison 6: 95 vs 84
+Comparison 7: 95 vs 90
+
+Highest Score: 95
+Total comparisons: 7
+
+
+PERFORMANCE COMPARISON
+======================
+
+Number of students: 8
+
+MAX HEAP
+Highest score: 95
+Construction comparisons: 10
+Maximum retrieval comparisons: 0
+Maximum retrieval complexity: O(1)
+
+LINEAR SEARCH
+Highest score: 95
+Maximum search comparisons: 7
+Maximum search complexity: O(n)
+
+CONCLUSION
+==========
+Max Heap is suitable for continuously maintaining
+and retrieving the highest score.
